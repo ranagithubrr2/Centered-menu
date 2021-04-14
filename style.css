@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+}
+.icons{
+    float:right;
+    width:100%;
+}
+#chkid{
+    display:none;
+}
+.close-icon{
+    display:none;
+}
+label img{
+    height:30px;
+    width:30px;
+    float:right;
+    display:none;
+}
+nav{
+    background:#615959;
+    display:flex;
+    padding:20px 50px;
+}
+nav .logo{
+    float:left;
+    color:#fff;
+    font-size:40px;
+    line-height:40px;
+}
+nav ul{
+    float:left;
+    text-align:center;
+    display:block;
+    width:100%;
+    padding-top:20px;
+    position:absolute;
+}
+nav ul li{
+    list-style-type:none;
+    display:inline-block;
+    padding:0 5px;
+}
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    padding:5px 15px;
+    border-radius:8px;
+
+}
+nav ul li a:hover, .active{
+    background:crimson;
+}
+@media screen and (max-width:800px){
+    nav label{
+        display:block;
+    }
+    nav ul li{
+        display:block;
+        padding:20px 0;
+        overflow:hidden;
+        width:100%;
+    }
+    nav .unlist{
+        display:block;
+        float:none;
+        background:#050505;
+        margin-top:-200%;
+        margin-left:-50px;
+        
+    }
+
+    #chkid:checked ~ .unlist{
+       margin-top:60px;
+       /* height:100vh; */
+    }
+    #chkid:checked ~ label .bar-icon{
+        display:none;
+    }
+    #chkid:checked ~ label .close-icon{
+        display:block;
+    }
+    label img{
+        display:block;
+        float:right;
+    }
+
+
+}
